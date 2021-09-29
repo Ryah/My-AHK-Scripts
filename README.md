@@ -122,3 +122,5 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
 [2nd-Keyboard by "TaranVH"](https://github.com/TaranVH/2nd-keyboard/)
 
 [WatchFolder by "just me"](https://www.autohotkey.com/boards/viewtopic.php?t=8384)
+
+[Mouse DoubleClick Fix by "Lexikos"](https://autohotkey.com/board/topic/82509-software-fix-for-double-clicking-mouse/?p=524864)
