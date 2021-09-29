@@ -6,27 +6,117 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
 
 
 ## Script List
-* Single file 2nd-Keyboard script 
-  * TaranVH's Script modified to work for my uses. Also completely portable with no dependencies.
-  
-* LiveWindows 3.0
-  * [My updated LiveWindows script](https://github.com/Ryah/Live-Windows-3.0). Makes a thumbnail overlay of any window for monitoring.
-  
-* Draft Organizer
-  * Watches my draft folder for any new drafts encoded from my master copy via Adobe Media Encoder. Once a new draft is detected and finished encoding, it renames the draft with a timestamp and organizes it by filename in it's own subfolder.
 
-* PREMIERE BUG FIX: for stubborn hot text
-  * TaranVH Bugfix. Self explanitory.
+<table>
 
-* PREMIERE MOD: Right click timeline to move playhead
-  * TaranVH Mod. Self explanitory.
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>Single file 2nd-Keyboard script:</b></sub>
+     </summary>
+     <hr>
+     TaranVH's Script modified to work for my uses. Also completely portable with no dependencies.
+    </details>
+   </td>
+  </tr>
+ </tbody>
 
-* Tilt Wheel Back-Forward
-  * Can't install Logitech G502 mouse driver without admin rights and I'm too socially awkward to ask IT so this was my solution.
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>LiveWindows 3.0:</b></sub>
+     </summary>
+     <hr>
+     <a href="https://github.com/Ryah/Live-Windows-3.0">My updated LiveWindows script</a>. Makes a
+     thumbnail overlay of any window for monitoring.
+    </details>
+   </td>
+  </tr>
+ </tbody>
 
-* Mouse DoubleClick Fix
-  * Said G502 is also starting to die so this just blocks the doubleclick input if it clicks too fast.
----
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>Draft Organizer:</b></sub>
+     </summary>
+     <hr>
+     Watches my draft folder for any new drafts encoded from my master copy via Adobe Media Encoder. Once
+     a new draft is detected and finished encoding, it renames the draft with a timestamp and organizes
+     it by filename in it's own subfolder.
+    </details>
+   </td>
+  </tr>
+ </tbody>
+
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>PREMIERE BUG FIX: for stubborn hot text:</b></sub>
+     </summary>
+     <hr>
+     TaranVH Bugfix. Self explanitory.
+    </details>
+   </td>
+  </tr>
+ </tbody>
+
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>PREMIERE MOD: Right click timeline to move playhead:</b></sub>
+     </summary>
+     <hr>
+     TaranVH Mod. Self explanitory.
+    </details>
+   </td>
+  </tr>
+ </tbody>
+
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>Tilt Wheel Back-Forward:</b></sub>
+     </summary>
+     <hr>
+     Can't install Logitech G502 mouse driver without admin rights and I'm too socially awkward to ask IT
+     so this was my solution.
+    </details>
+   </td>
+  </tr>
+ </tbody>
+
+
+ <tbody>
+  <tr>
+   <td>
+    <details>
+     <summary>
+      <sub><b>Mouse DoubleClick Fix:</b></sub>
+     </summary>
+     <hr>
+     Said G502 is also starting to die so this just blocks the doubleclick input if it clicks too fast.
+    </details>
+   </td>
+  </tr>
+ </tbody>
+ 
+ 
+</table>
+
+
+
 
 ## Credit
 [2nd-Keyboard by "TaranVH"](https://github.com/TaranVH/2nd-keyboard/)
