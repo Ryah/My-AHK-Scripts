@@ -91,7 +91,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
      </summary>
      <hr>
      Can't install Logitech G502 mouse driver without admin rights and I'm too socially awkward to ask IT
-     so this was my solution.
+     so this was my solution. Just sends the browser forward/back input when I tilt the mouse wheel.
     </details>
    </td>
   </tr>
