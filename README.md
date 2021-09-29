@@ -14,7 +14,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>Single file 2nd-Keyboard script:</b>
+      <b>Single file 2nd-Keyboard script</b>
      </summary>
      <hr>
      TaranVH's Script modified to work for my uses. Also completely portable with no dependencies.
@@ -28,7 +28,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>LiveWindows 3.0:</b>
+      <b>LiveWindows 3.0</b>
      </summary>
      <hr>
      <a href="https://github.com/Ryah/Live-Windows-3.0">My updated LiveWindows script</a>. Makes a
@@ -43,7 +43,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>Draft Organizer:</b>
+      <b>Draft Organizer</b>
      </summary>
      <hr>
      Watches my draft folder for any new drafts encoded from my master copy via Adobe Media Encoder. Once
@@ -59,7 +59,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>PREMIERE BUG FIX: for stubborn hot text:</b>
+      <b>PREMIERE BUG FIX: for stubborn hot text</b>
      </summary>
      <hr>
      TaranVH Bugfix. Self explanitory.
@@ -73,7 +73,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-     <b>PREMIERE MOD: Right click timeline to move playhead:</b>
+     <b>PREMIERE MOD: Right click timeline to move playhead</b>
      </summary>
      <hr>
      TaranVH Mod. Self explanitory.
@@ -87,7 +87,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>Tilt Wheel Back-Forward:</b>
+      <b>Tilt Wheel Back-Forward</b>
      </summary>
      <hr>
      Can't install Logitech G502 mouse driver without admin rights and I'm too socially awkward to ask IT
@@ -102,7 +102,7 @@ Any scripts or libraries I didn't make will be listed below or in their respecti
    <td>
     <details>
      <summary>
-      <b>Mouse DoubleClick Fix:</b>
+      <b>Mouse DoubleClick Fix</b>
      </summary>
      <hr>
      Said G502 is also starting to die so this just blocks the doubleclick input if it clicks too fast.
