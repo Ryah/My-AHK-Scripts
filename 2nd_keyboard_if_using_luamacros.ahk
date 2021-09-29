@@ -1,17 +1,18 @@
 #NoEnv
-Menu, Tray, Icon, shell32.dll, 317 ; this changes the asdtray icon to a little settings icon
+; KeyHistory
+; SendMode Input
+; #UseHook On ;<-- Fuck this Hook. This causes the Jabber Copy/Cut Bug.
+; #InstallKeybdHook ;<-- Use this one instead.
+Menu, Tray, Icon, shell32.dll, 317 ; this changes the tray icon to a little settings icon
 #SingleInstance force ;only one instance of this script may run at a time!
-#MaxHotkeysPerInterval 2000asd
+#MaxHotkeysPerInterval 2000
 #WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm
 global guiShown = false
 global headX = 0
 global headY = 0
 global mouseX = 0
 global mouseY = 0
-^+J::
-
-
-
+$^+J::
 start:
 /*
 					╭───────────────────────────────────────────────────────────────────╮
@@ -33,6 +34,11 @@ start:
 					╰───────────────────────────────────────────────────────────────────╯
 */
 
+#IfWinActive ahk_exe AfterFX.exe
+
+^c::SendInput ^c
+^x::SendInput ^x
+
 /*
 			╔═══════════════════════════════════════════════════════════════════════════════════════╗
 			║																						║	
@@ -43,12 +49,13 @@ start:
 
 #IfWinActive ahk_exe Adobe Premiere Pro.exe
 
-^c::SendInput ^!+{F24}
-^x::SendInput ^!+{F23}
+$^c::SendInput ^!+{F24}
+$^x::SendInput ^!+{F23}
 
 ; Normal Keyboard Start
 ~F1::
 	tippy("Excalibur")
+	send,!{Space}
 return
 
 ~F2::
@@ -344,13 +351,268 @@ return
 /*
 			╔═══════════════════════════════════════════════════════════════════════════════════════╗
 			║																						║	
+			║	                            Non-Premiere Shortcuts                                	║	
+			║																						║	
+			╚═══════════════════════════════════════════════════════════════════════════════════════╝
+*/
+#IfWinActive
+
+
+;Normal Keyboard Start
+$~F1::
+	tippy("F1")
+return
+
+$~F2::
+	tippy("Rename")
+return
+
+~F3::
+	tippy("F3")
+return
+
+~F4::
+	tippy("F4")
+return
+
+~F5::
+	tippy("Refresh/Debug")
+return
+
+~F6::
+	tippy("F6")
+return
+
+~F7::
+	tippy("F7")
+return
+
+~F8::
+	tippy("F8")
+return
+
+~F9::
+	tippy("F9")
+return
+
+~F10::
+	tippy("F10")
+return
+
+~F11::
+	tippy("F11")
+return
+
+~F12::
+	tippy("F12")
+return
+
+;2nd Keyboard Start
+
+~F13:: ;1
+	tippy("F13")
+return
+
+~F14:: ;2
+	tippy("F14")
+return
+
+~F15:: ;3
+	tippy("F15")
+return
+
+~F16:: ;4
+	tippy("F16")
+return
+
+~F17:: ;5
+	tippy("F17")
+return
+
+~F18:: ;6
+	tippy("F18")
+return
+
+~F19:: ;7
+	tippy("F19")
+return
+
+~F20:: ;8
+	tippy("F20")
+return
+
+~F21:: ;9
+	tippy("F21")
+return
+
+~F22:: ;0
+	tippy("F22")
+return
+
+~F23:: ;-
+	tippy("F23")
+return
+
+~F24:: ;=
+	tippy("F24")
+return
+
+
+~^F13:: ;Q
+	tippy("^F13")
+return
+
+~^F14:: ;W
+	tippy("^F14")
+return
+
+~^F15:: ;E
+	tippy("^F15")
+return
+
+~^F16:: ;R
+	tippy("^F16")
+return
+
+~^F17:: ;T
+	tippy("^F17")
+return
+
+~^F18:: ;Y
+	tippy("^F18")
+return
+
+~^F19:: ;U
+	tippy("^F19")
+return
+
+~^F20:: ;I
+	tippy("^F20")
+return
+
+~^F21:: ;O
+	tippy("^F21")
+return
+
+~^F22:: ;P
+	tippy("^F22")
+return
+
+~^F23:: ;[
+	tippy("^F23")
+return
+
+~^F24:: ;]
+	tippy("^F24")
+return
+
+
+~^!F13:: ;A
+	tippy("^!F13")
+return
+
+~^!F14:: ;S
+	tippy("^!F14")
+return
+
+~^!F15:: ;D[]
+	tippy("^!F15")
+return
+
+~^!F16:: ;F
+	tippy("^!F16")
+return
+
+~^!F17:: ;G
+	tippy("^!F17")
+return
+
+~^!F18:: ;H
+	tippy("^!F18")
+return
+
+~^!F19:: ;J
+	tippy("^!F19")
+return
+
+~^!F20:: ;K
+	tippy("^!F20")
+return
+
+~^!F21:: ;L
+	tippy("^!F21")
+return
+
+~^!F22:: ;;
+	tippy("^!F22")
+return
+
+~^!F23:: ;'
+	tippy("^!F23")
+return
+
+~^!F24:: ;Z
+	tippy("^!F24")
+return
+
+~^+!F13:: ;X
+	tippy("^+!F13")
+return
+
+~^+!F14:: ;C
+	tippy("^+!F14")
+return
+
+~^+!F15:: ;V
+	tippy("^+!F15")
+return
+
+~^+!F16:: ;B
+	tippy("^+!F16")
+return
+
+~^+!F17:: ;N
+	tippy("^+!F17")
+return
+
+~^+!F18:: ;M
+	tippy("^+!F18")
+return
+
+~^+!F19:: ;,
+	tippy("^+!F19")
+return
+
+~^+!F20:: ;.
+	tippy("^+!F20")
+return
+
+~^+!F21:: ;/
+	tippy("^+!F21")
+return
+
+~^+!F22:: ;{SPACE}
+	tippy("^+!F22")
+return
+
+~^+!F23:: ;{ALT}
+	tippy("^+!F23")
+return
+
+~^+!F24:: ;{RIGHT CLICK MENU BUTTON THING}
+	tippy("^+!F24")
+return
+
+/*
+			╔═══════════════════════════════════════════════════════════════════════════════════════╗
+			║																						║	
 			║	                                 	Functions                                		║	
 			║																						║	
 			╚═══════════════════════════════════════════════════════════════════════════════════════╝
 */
 
 SavePHPos() {
-	ControlGetPos, xTimeCorner, yTimeCorner, Width, Height, DroverLord - Window Class44, ahk_class Premiere Pro
+	ControlGetPos, xTimeCorner, yTimeCorner, Width, Height, DroverLord - Window Class48, ahk_class Premiere Pro
 	timeY := yTimeCorner+20
 	timeX := xTimeCorner+235 
 	;MouseMove, timeX, timeY, 0
@@ -834,5 +1096,3 @@ SendClickThrough(mX,mY)
 	;sleep, 250
 	;ControlClick, x%convertedX% y%convertedY%, %targetName%,,,, NA u
 }
-
-
