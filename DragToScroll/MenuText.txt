@@ -1,0 +1,53 @@
+﻿= = = Top = = =
+^#{Left}	Switch Desktop	(Send)
+^#{Right}	Switch Desktop	(Send)
+#{Tab}	Windows Switcher	(Send)
+[:\s- Microsoft.+?Edge:] m{Enter}	MyActivity.Google	(Send)
+[:\s- Microsoft.+?Edge:] +^u	Rald Toggle	(Send)
+^f	Find	(Send)
+[:\s- Microsoft.+?Edge:] ^r	Reload Web Page	(Send)
+^w	Close Tab	(Send)
+[:\s- YouTube:] j	10s Backward	(Send)
+[:\s- Microsoft.+?Edge:] !{Left}	Previous Web Page	(Send)
+[:\s- Microsoft.+?Edge:] !{Right}	Next Web Page	(Send)
+{Enter}	Enter	(Send)
+[:\s- YouTube:] f	Fullscreen Toggle	(Send)
+{Space}	Space	(Send)
+{Del}	Delete	(Send)
+{Esc}	Escape	(Send)
+[:\s- Sublime Text:] ^g	Go To Line	(Send)
+[:\s- Sublime Text:] !d	Duplicate	(Send)
+^z	Undo	(Send)
+^x	Cut	(Send)
+^c	Copy	(Send)
+^v	Paste	(Send)
+^s	Save File	(Send)
+^a	Select All	(Send)
+- - - - - - - - - - - - - - - -
+Close Menu	{menu.Gui_OnEscape}	Return To mSpot	(Function)
+Reload Menu	{menu.Reload}	Reflect The Latest Content	(Function)
+Edit Menu	{EditMenu}	(Gosub)
+Demo One	{demo1}	hello world	(Gosub)
+Demo Two	{demo2}	foobar	(Gosub)
+Demo Three	{demo3}	blablabla	(Function)
+Demo Four	{demo4}	bla bla	(Func+Param)	dummy1
+Demo Five	{demo5}	bla bla bla	(Func+Param)	dummy1,dummy2
+Script I	(Script)	msgbox % "remote: " a.call("var","dummy1@pool")
+Script II	(Script)	msgbox % "remote: " a.call("var","dummy2@pool")
+Script III	(Script)	a.call("var","Set:dummy3@pool",a_tickcount)|| ||msgbox % "remote: " a.call("var","dummy3@pool")
+Verify	{demo4}	(Func+Param)	dummy3
+Script IV	(Script)	{Apart}
+[:Text Filter:RICHEDIT50W1:] Script V	(Script)	{fghij}
+Script VI	(Script)	{menuDemo}
+= = = Bottom = = =
+;
+{Script Apart}
+a.call("var","Set:dummy3@pool",a_tickcount "(a)")
+msgbox % "remote: " a.call("var","dummy3@pool")
+{/Script}
+
+{Script fghij}
+a.call("demo5", "p1p", "p2p")
+If InStr(a.call("var","dummy3@pool"), "(a)")
+	msgbox found "(a)" in dummy3
+{/Script}
